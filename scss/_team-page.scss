@@ -1,0 +1,550 @@
+
+
+
+// team-page.scss
+
+
+
+.team-page {
+	max-width: 960px;
+	margin: 0 auto;
+
+	@media screen and (max-width: 990px) {
+		max-width: 900px;
+	}
+
+	@media screen and (max-width: 930px) {
+		max-width: 800px;
+	}
+
+	@media screen and (max-width: 830px) {
+		max-width: 700px;
+	}
+
+	@media screen and (max-width: 730px) {
+		max-width: 100%;
+	}
+
+	.row {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.left-content {
+		float: left;
+		width: 62.5%;
+
+		@media screen and (max-width: 730px) {
+			width: 90%;
+			float: none;
+			margin: 0 auto 30px;
+		}
+
+		@media screen and (max-width: 600px) {
+			width: 95%;
+		}
+
+		.schedule-section, h3.titleLarge {
+
+			@media screen and (max-width: 600px) {
+				display: none;
+			}
+		}
+
+		h2 {
+			text-align: left;
+			margin: 0 0 25px;
+			font-family: 'Francois One', sans-serif;
+			font-weight: 400;
+			color: #333;
+			text-shadow: 1px 1px 0 #fff;
+
+			@media screen and (max-width: 830px) {
+				font-size: 25px;
+			}
+
+			@media screen and (max-width: 730px) {
+				text-align: center;
+			}
+
+			@media screen and (max-width: 600px) {
+				text-align: left;
+				width: 90%;
+				margin: 25px auto 25px;
+			}
+		}
+
+		h3 {
+			font-family: 'Francois One', sans-serif;
+			font-weight: 400;
+			color: #333;
+			font-size: 18px;
+			margin-bottom: 6px;
+			margin-top: 35px;
+			text-shadow: 1px 1px 0 #fff;
+
+			img.insta {
+				width: 70px;
+				margin-left: 4px;
+
+				&:hover {
+					width: 74px;
+				}
+			}
+		}
+
+		h4 {
+			font-weight: 600;
+			font-size: 13px;
+			background: #323232;
+			color: #fff;
+			font-family: 'Open Sans', sans-serif;
+			padding: 5px 15px;
+			margin-bottom: 0;
+			display: inline-block;
+			text-transform: uppercase;
+			margin-top: 20px;
+			box-shadow: 2px -2px 2px rgba(0,0,0,0.1), -1px -1px 1px rgba(0,0,0,0.1);
+		}
+
+		h3.insta {
+
+			@media screen and (max-width: 600px) {
+				width: 93%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+
+		.instagram-section {
+			width: 100%;
+			background: #f1f1f1;
+			box-shadow: 2px 2px 2px rgba(0,0,0,0.1), -1px -1px 1px rgba(0,0,0,0.1);
+			padding: 5px 5px 0px;
+			margin: 8px auto 0;
+
+			@media screen and (max-width: 600px) {
+				width: 93%;
+			}
+		}
+
+		table {
+			font-family: 'Open Sans', sans-serif;
+			box-shadow: 2px 2px 2px rgba(0,0,0,0.1), -1px -1px 1px rgba(0,0,0,0.1);
+
+			i.fa {
+			    color: #555;
+			    font-size: 17px;
+			    line-height: 15px;
+
+			    &:hover {
+			    	color: #217cc6;
+			    }
+			}
+
+			span.line {
+				color: #ddd;
+				font-size: 17px;
+				line-height: 15px;
+				margin: 0 2px;
+			}
+		}
+
+		thead {
+			font-weight: 600;
+			font-size: 13px;
+			background: #323232;
+			color: #fff;
+			text-transform: uppercase;
+
+			td {
+				padding: 3px 0;
+			}
+		}
+
+		tr.odd td, tr.even td, tr.coach-name td {
+			padding: 5px 0;
+			font-size: 12px;
+
+			@media screen and (max-width: 830px) {
+				font-size: 11px;
+			}
+
+			@media screen and (max-width: 730px) {
+				font-size: 12px;
+			}
+		}
+
+		tr.even {
+			background: #eee;
+		}
+
+		tr.odd, tr.coach-name {
+			background: #fff;
+		}
+
+		td.img {
+			width: 60px;
+		}
+
+		span.card {
+			display: none;
+		}
+
+		td.name a:hover {
+
+			&span.card {
+				display: block;
+			}
+		}
+
+		td.date, td.number, td.staff {
+			padding-left: 15px !important;
+		}
+
+		td.staff {
+			padding-right: 15px !important;
+		}
+	}
+
+	img.teamLarge {
+		float: right;
+		width: 35.5%;
+		margin-left: 2%;
+		margin-bottom: 15px;
+		border: 8px solid #F1F1F1;
+		box-shadow: 2px 2px 2px rgba(0,0,0,0.1), -1px -1px 1px rgba(0,0,0,0.1);
+		background: #F1F1F1;
+		margin-top: 93px;
+
+		@media screen and (max-width: 730px) {
+			display:none;
+		}
+	}
+
+	img.teamSmall {
+		display: none;
+
+		@media screen and (max-width: 730px) {
+			display: block;
+			width: 60%;
+			margin: 30px auto;
+			border: 5px solid #F1F1F1;
+			box-shadow: 2px 2px 2px rgba(0,0,0,0.1), -1px -1px 1px rgba(0,0,0,0.1);
+		}
+
+		@media screen and (max-width: 600px) {
+			width: 90%;
+		}
+	}
+
+	.twitter-section {
+		font-family: 'Open Sans', sans-serif;
+		float: right;
+		width: 35.5%;
+		margin-left: 2%;
+		border: 8px solid #F1F1F1;
+		box-shadow: 2px 2px 2px rgba(0,0,0,0.1), -1px -1px 1px rgba(0,0,0,0.1);
+		background: #F1F1F1;
+		height: 746px;
+
+		@media screen and (max-width: 730px) {
+			width: 90%;
+			float: none;
+			margin: 0 auto;
+		}
+
+    	.inner {
+    		width: 100%;
+    		height: 703px;
+    		overflow-y: auto;
+    		overflow-x: hidden;
+    		border-top: 1px solid #ddd;
+    		border-bottom: 1px solid #ddd;
+
+    		@media screen and (max-width: 600px) {
+    			overflow-y: hidden;
+    		}
+    	}
+		
+		h2 {
+			font-family: 'Francois One', sans-serif;
+			font-weight: 400;
+			font-size: 15px;
+			text-align: left;
+			margin: 1px 0 9px 1px;
+			color: #666;
+			padding: 0;
+			border-radius: 3px;
+
+			a {
+				color: #666;
+				-moz-transition-property: "color";
+				-o-transition-property: "color";
+				-webkit-transition-property: "color";
+				transition-property: "color";
+				-moz-transition-duration: 200ms;
+				-o-transition-duration: 200ms;
+				-webkit-transition-duration: 200ms;
+				transition-duration: 200ms;
+
+				&:hover {
+					text-decoration: none;
+					color: #55ACEE;
+				}
+			}
+
+			span.scrollIcon {
+			    float: right;
+			    margin-right: 2px;
+			    margin-top: -4px;
+
+			    i.fa.fa-angle-up {
+				    display: block;
+				}
+
+				i.fa.fa-angle-down {
+				    display: block;
+				    margin-top: -7px;
+				}
+			}
+		}
+	}
+
+	.schedule {
+		margin-top: 100px;
+
+		h3 {
+			font-family: 'Francois One', sans-serif;
+			color: #002244;
+			margin-bottom: 30px;
+			margin-top: 0;
+			text-align: left;
+
+			@media screen and (max-width: 840px) {
+				margin: 2.3%;
+			}
+
+			@media screen and (max-width: 575px) {
+				text-align: center;
+				margin-bottom: 50px;
+			}
+		}
+
+		.schedule-entry {
+			width: 100%;
+			background: #f5f5f5;
+			box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1), -1px -1px 2px rgba(0, 0, 0, 0.1);
+			border-radius: 2px;
+			display: inline-block;
+			padding: 15px 20px;
+			margin-bottom: 8px;
+
+			p {
+				font-family: 'Francois One', sans-serif;
+				font-family: 'Open Sans', sans-serif;
+				font-family: "proxima-nova",sans-serif;
+				display: inline-block;
+				float: left;
+				margin: 0;
+				/*text-transform: uppercase;*/
+
+				&.date {
+					font-size: 16px;
+					font-weight: 700;
+					color: rgb(51,51,51);
+					margin-right: 50px;
+					width: 130px;
+
+					font-size: 13px;
+					font-weight: 300;
+					line-height: 25px;
+				}
+
+				&.event {
+					font-size: 13px;
+    				margin-right: 50px;
+    				font-weight: 500;
+    				width: 210px;
+    				text-transform: uppercase;
+				}
+
+				&.location {
+					font-size: 13px;
+					font-weight: 300;
+					line-height: 25px;
+					width: 195px;
+				}
+			}
+		}
+
+	}
+
+	.roster-section {
+		
+	}
+
+	.roster {
+		width: 100%;
+		margin-top: 20px;
+		/* background: #fff; */
+		/* padding: 30px 50px; */
+		/* border: 1px solid #ddd; */
+		border-radius: 4px;
+		/* box-shadow: 1px 1px 1px rgba(0,0,0,0.15), -1px -1px 1px rgba(0,0,0,0.15); */
+
+		h3 {
+			text-align: left;
+			font-family: 'Francois One', sans-serif;
+			font-weight: 400;
+			color: #333;
+			font-size: 18px;
+			margin-bottom: 30px;
+			margin-top: 0px;
+			text-shadow: 1px 1px 0 #fff;
+
+			@media screen and (max-width: 840px) {
+				margin: 2.3%;
+			}
+
+			@media screen and (max-width: 575px) {
+				margin-bottom: 15px;
+			}
+		}
+
+		.roster-entry {
+			width: 32%;
+			background: url("images/logo-transparent.png") no-repeat;
+			background-position: center top;
+			background-color: #f5f5f5;
+			display: inline-block;
+			border-radius: 2px;
+			box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15), -1px -1px 2px rgba(0, 0, 0, 0.15);
+			background-size: 230px;
+			margin-bottom: 20px;
+			position: relative;
+			/* border: 1px solid #e5e5e5; */
+			/* border-right: 2px solid #ddd; */
+			/* border-bottom: 2px solid #ddd; */
+
+			@media screen and (max-width: 840px) {
+				width: 45%;
+			}
+
+			@media screen and (max-width: 575px) {
+				width: 95%;
+			}
+
+			@media screen and (max-width: 450px) {
+				width: 95%;
+			}
+
+			&.entry-1, &.entry-2 {
+				margin-right: 1.5%;
+			}
+
+			&.entry-1, &.entry-2, &.entry-3 {
+
+				@media screen and (max-width: 840px) {
+					margin: 2.3%;
+				}
+
+				@media screen and (max-width: 575px) {
+					margin: 20px 13%;
+				}
+
+				@media screen and (max-width: 450px) {
+					margin: 15px 2.5%;
+				}
+			}
+
+		    img.headshot {
+			    /*width: 150px;*/
+			    /*width: 129px;*/
+			    width: 40%;
+			    float: left;
+			    border-bottom-left-radius: 2px;
+			    position: absolute;
+			    bottom: 0;
+			    left: 0;
+			}
+
+			.bio {
+				float: right;
+				padding: 7px 20px 7px 0px;
+				/*width: 60%;*/
+
+			    p {
+				    color: #002244;
+				}
+
+				p.name {
+					font-size: 24px;
+					text-align: right;
+					font-family: 'Francois One', sans-serif;
+					color: #002244;
+					margin-bottom: 0;
+					/* text-shadow: 1px 1px 0px #92B7D6; */
+    				/* font-style: italic; */
+
+					&.first {
+						margin-bottom: -6px;
+					}
+				}
+
+				p.location {
+					/* font-family: 'Francois One', sans-serif; */
+					font-style: italic;
+					font-weight: 400;
+					margin: 10px 0;
+					font-size: 13px;
+					text-transform: uppercase;
+					color: #f5f5f5;
+					text-align: right;
+					/* text-shadow: 1px 1px 0px rgba(0,0,0,0.1); */
+
+					&.falls {
+						color: #8560a8;
+					}
+					&.howards {
+						color: #aba000;
+					}
+					&.lutheran {
+						color: #00a651;
+					}
+					&.south {
+						color: #f26c4f;
+					}
+					&.north {
+						color: #448ccb;
+					}
+				}
+
+				p.number {
+					text-align: right;
+					font-size: 26px;
+					font-weight: 700;
+					/* font-style: italic; */
+					margin-top: 0;
+					margin-bottom: 0;
+					font-family: 'Francois One', sans-serif;
+					/* text-shadow: 1px 1px 0px #92B7D6; */
+				}
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

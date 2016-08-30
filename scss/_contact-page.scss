@@ -1,0 +1,217 @@
+
+
+
+// contact-page.scss
+
+
+
+.contact-page {
+	max-width: 960px;
+	margin: 0 auto;
+
+	@media screen and (max-width: 990px) {
+		max-width: 900px;
+	}
+
+	@media screen and (max-width: 930px) {
+		max-width: 800px;
+	}
+
+	@media screen and (max-width: 830px) {
+		max-width: 700px;
+	}
+
+	@media screen and (max-width: 730px) {
+		max-width: 100%;
+	}
+
+	.left-content {
+		float: left;
+		width: 57%;
+
+		@media screen and (max-width: 730px) {
+			width: 90%;
+			float: none;
+			margin: 0 auto 30px;
+		}
+
+		@media screen and (max-width: 600px) {
+			width: 90%;
+		}
+
+		h2 {
+			text-align: left;
+			margin: 0 0 25px;
+			font-family: 'Francois One', sans-serif;
+			font-weight: 400;
+			color: #333;
+			text-shadow: 1px 1px 0 #fff;
+
+			@media screen and (max-width: 830px) {
+				font-size: 25px;
+			}
+
+			@media screen and (max-width: 730px) {
+				text-align: center;
+			}
+		}
+
+		p {
+			font-family: 'Open Sans', sans-serif;
+			font-size: 15px;
+			line-height: 28px;
+			font-weight: 400;
+			color: #333;
+			margin-bottom: 20px;
+
+			&::selection {
+			  background: #369ff4; /* WebKit/Blink Browsers */
+			  color: #fff;
+			  opacity: 1;
+			}
+
+			&::-moz-selection {
+			  background: #369ff4; /* Gecko Browsers */
+			  color: #fff;
+			  opacity: 1;
+			}
+		}
+
+		label {
+		    font-family: 'Francois One', sans-serif;
+		    font-weight: 400;
+		    /* font-family: 'Open Sans', sans-serif; */
+		    /* font-style: italic; */
+		    font-size: 15px;
+		    letter-spacing: 0.4px;
+		    margin-bottom: 2px !important;
+		    margin-top: 18px !important;
+		    color: #333;
+			text-shadow: 1px 1px 0 #fff;
+		}
+
+		input, textarea {
+			font-family: 'Open Sans', sans-serif;
+		    background: #f3f3f3;
+		    border: none;
+		    box-shadow: none;
+		    border-radius: 2px;
+		    border: 1px solid #ddd;
+		    padding-left: 8px;
+		    padding-top: 5px;
+
+		    &:focus, &:active {
+		    	outline: 0;     
+				outline-style: none;     
+				outline-width: 0;
+		    	box-shadow: none;
+		    	border: 2px solid #ccc;
+			}
+		}
+
+		input {
+			height: 40px;
+		}
+
+		input#gform_submit_button_1 {
+			border: none;
+		    padding: 0px 24px;
+		    background: #3374ba;
+		    color: #fff;
+		    -webkit-border-radius: 4px;
+		    -mox-border-radius: 4px;
+		    border-radius: 4px;
+		    font-family: 'Francois One', sans-serif;
+		    font-weight: 400;
+		    font-size: 16px;
+		    letter-spacing: 0.25px;
+		    text-shadow: 1px 1px 0 #2d64a0;
+		    height: 48px;
+		    border-bottom: 2px solid #2d64a0;
+		    border-right: 2px solid #2d64a0;
+
+		    &:hover {
+		    	background: #316eaf;
+		    }
+
+		    &:focus, &:active {
+		    	outline: 0;     
+				outline-style: none;     
+				outline-width: 0;
+		    	box-shadow: none;
+		    	border: none;
+		    	border-bottom: 2px solid #2d64a0;
+		    	border-right: 2px solid #2d64a0;
+			}
+		}
+	}
+
+	.twitter-section {
+		font-family: 'Open Sans', sans-serif;
+		float: right;
+		width: 35.5%;
+		margin-left: 2%;
+		border: 8px solid #F1F1F1;
+		box-shadow: 2px 2px 2px rgba(0,0,0,0.1), -1px -1px 1px rgba(0,0,0,0.1);
+		background: #F1F1F1;
+		height: 582px;
+
+		@media screen and (max-width: 730px) {
+			width: 90%;
+			float: none;
+			margin: 0 auto;
+		}
+
+    	.inner {
+    		width: 100%;
+    		height: 539px;
+    		overflow-y: auto;
+    		overflow-x: hidden;
+    		border-top: 1px solid #ddd;
+    		border-bottom: 1px solid #ddd;
+    	}
+		
+		h2 {
+			font-family: 'Francois One', sans-serif;
+			font-weight: 400;
+			font-size: 15px;
+			text-align: left;
+			margin: 1px 0 9px 1px;
+			color: #666;
+			padding: 0;
+			border-radius: 3px;
+
+			a {
+				color: #666;
+				-moz-transition-property: "color";
+				-o-transition-property: "color";
+				-webkit-transition-property: "color";
+				transition-property: "color";
+				-moz-transition-duration: 200ms;
+				-o-transition-duration: 200ms;
+				-webkit-transition-duration: 200ms;
+				transition-duration: 200ms;
+
+				&:hover {
+					text-decoration: none;
+					color: #55ACEE;
+				}
+			}
+
+			span.scrollIcon {
+			    float: right;
+			    margin-right: 2px;
+			    margin-top: -4px;
+
+			    i.fa.fa-angle-up {
+				    display: block;
+				}
+
+				i.fa.fa-angle-down {
+				    display: block;
+				    margin-top: -7px;
+				}
+			}
+		}
+	}
+}

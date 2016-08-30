@@ -1,0 +1,34 @@
+/*
+Theme Name: Lakeshore Force AAU Theme
+Author: Sean Hasenstein
+Author URI: http://seanhasenstein.com
+Description: This theme is used for the Lakeshore Force AAU Basketball Program. A grassroots program based in Southeastern Wisconsin. It is developed with Bootstrap and uses Font Awesome Icons.
+Version: 1.1
+License: GNU General Public License v2 or later
+
+Use this theme to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+body, html {
+	overflow-x: hidden;
+}
+
+body {
+	background: #EDEDED;
+	background: #E3E3E3;
+}
+
+@import 'navigation';
+@import 'main-content';
+@import 'team-page';
+@import 'schedule-page';
+@import 'mission-page';
+@import 'contact-page';
+@import 'mobile-team-section';
+@import 'single-post';
+@import 'twitter-widget';
+@import 'site-map';
+@import 'footer';
+
+@import 'test-page';

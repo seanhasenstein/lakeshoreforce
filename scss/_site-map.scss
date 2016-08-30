@@ -1,0 +1,61 @@
+
+
+
+// site-map.scss
+
+
+
+.sitemap-page {
+	max-width: 600px;
+	margin: 0 auto;
+
+	@media screen and (max-width: 600px) {
+		max-width: 95%;
+	}
+
+	h2 {
+		text-align: center;
+		font-family: 'Francois One', sans-serif;
+		font-weight: 400;
+		color: #333;
+		margin-bottom: 40px;
+	}
+
+	ul {
+		list-style-type: none;
+		padding: 0;
+	}
+
+	a li {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 15px;
+		font-weight: 400;
+		color: #333;
+		margin: 6px 0;
+
+		i.fa {
+		    margin-left: 6px;
+		}
+	}
+
+	.left-side, .right-side {
+		width: 50%;
+		float: left;
+	}
+
+	.left-side {
+
+		ul {
+			width: 125px;
+			margin: 0 auto;
+		}
+	}
+
+	.right-side {
+
+		ul {
+			width: 118px;
+			margin: 0 auto;
+		}
+	}
+}
