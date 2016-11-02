@@ -28,6 +28,15 @@
 	<meta name="msapplication-wide310x150logo" content="http://www.lakeshoreforce.com/mstile-310x150.png" />
 	<meta name="msapplication-square310x310logo" content="http://www.lakeshoreforce.com/mstile-310x310.png" />
 
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+	<script type="text/javascript">
+	    $(document).ready(function(){
+	        $("#myModal").modal('show');
+	    });
+	</script>
+
+
 	<?php wp_head(); ?>
 
 </head>

@@ -1,0 +1,249 @@
+
+
+
+// modal-tryouts.scss
+
+
+
+button.close {
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+    background: #333;
+    opacity: 1;
+    color: #ccc;
+    padding: 7px 12px 11px 12px;
+    border-radius: 50px;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    z-index: 999;
+    /* box-shadow: -1px 1px 0px rgba(0,0,0,0.3); */
+    background: #002244;
+    color: #93B8D7;
+
+    &:hover {
+    	opacity: 1.0;
+    	color: #93B8D7;
+    }
+}
+.close {
+    text-shadow: 0 1px 0 #93B8D7;
+}
+
+.modal-body {
+	font-family: 'Open Sans', sans-serif;
+	border-radius: 6px;
+
+	img {
+		width: 100px;
+		margin: 25px 0 0 0;
+	}
+
+	h2, h3 {
+		font-weight: 600;
+		text-transform: uppercase;
+		/*font-style: italic;*/
+	}
+
+	h2 {
+		margin-top: 30px;
+		margin-bottom: 0;
+		font-size: 26px;
+		font-style: italic;
+
+		@media screen and (max-width: 530px) {
+			margin-top: 20px;
+			margin-bottom: 5px;
+		}
+	}
+
+	h3 {
+		margin-top: 12px;
+		font-weight: 500;
+		font-size: 20px;
+		font-style: italic;
+		margin-bottom: 0;
+
+		@media screen and (max-width: 515px) {
+			margin-bottom: 35px;
+		}
+	}
+
+	.modal-2 {
+
+		.when {
+			text-align: center;
+			margin: 0 0 15px 0;
+
+			@media screen and (max-width: 530px) {
+				margin: 0;
+			}
+
+			ul {
+				display: inline-block;
+				/*text-align: left;*/
+				margin: 30px 0 0;
+			    list-style-type: none;
+			    padding: 0;
+
+			    @media screen and (max-width: 515px) {
+			    	display: none;
+			    }
+
+				li {
+					line-height: 30px;
+					font-weight: 300;
+					font-size: 15px;
+					font-style: italic;
+
+					span.bold-font {
+						/*font-weight: 500;*/
+						/*font-style: italic;*/
+					}
+
+					span.small-font {
+						font-size: 11px;
+						/*font-style: italic;*/
+					}
+				}
+
+				li.date {
+					font-style: italic;
+					font-weight: 600;
+					font-size: 17px;
+					text-align: center;
+					margin: 0 0 3px 0;
+				}
+			}
+
+			ul.first {
+				/*margin-right: 70px;*/
+				margin-right: 35px;
+				padding-right: 35px;
+				border-right: 1px solid #e5e5e5;
+			}
+			ul.second {
+			}
+
+			h4 {
+				display: none;
+
+				@media screen and (max-width: 515px) {
+					display: block;
+					font-weight: 400;
+					font-size: 17px;
+					/*text-transform: uppercase;*/
+					margin: 6px;
+					font-style: italic;
+					color: #00305f;
+				}
+			}
+		}
+
+		h5, h5 a {
+		    margin: 35px 0 38px;
+		    text-transform: uppercase;
+		    font-weight: 500;
+		    font-size: 17px;
+		    font-style: italic;
+		    color: #000;
+
+		    &:hover {
+		    	color: #333;
+		    }
+
+		    @media screen and (max-width: 515px) {
+				margin: 41px 0 38px;
+				font-weight: 600;
+				font-size: 13px;
+		    }
+
+		}
+
+		a.modal-btn {
+			width: 210px;
+			display: inline-block;
+			background: #ddd;
+			padding: 12px 0;
+			border-radius: 3px;
+			color: #fff;
+			font-weight: 300;
+			cursor: pointer;
+			margin-bottom: 30px;
+			text-transform: uppercase;
+			font-size: 12px;
+			font-style: italic;
+			-webkit-transition: all 170ms ease-in-out;
+			-moz-transition: all 170ms ease-in-out;
+			-o-transition: all 170ms ease-in-out;
+			transition: all 170ms ease-in-out;
+
+			@media screen and (max-width: 530px) {
+				width: 90%;
+				margin: 0 auto;
+				padding: 18px 0;
+				font-size: 16px;
+			}
+
+			&:hover, &:focus, &:active {
+				text-decoration: none;
+				outline: none;
+			}
+
+			&.btn-one {
+				margin-right: 20px;
+				color: #fff;
+				background: #00305f;
+				font-weight: 400;
+				letter-spacing: 0.5px;
+
+				@media screen and (max-width: 530px) {
+					margin-right: 0;
+					margin-bottom: 15px;
+					font-weight: 600;
+				}
+
+				&:hover {
+					color: #93B8D7;
+					/*background: #002244;*/
+				}
+			}
+
+			&.btn-two {
+				background: #eee;
+				border: 1px solid #ddd;
+				color: #002244;
+				text-transform: none;
+				font-size: 11px;
+
+				@media screen and (max-width: 530px) {
+					font-size: 14px;
+					font-weight: 400;
+				}
+
+				&:hover {
+					background: #ddd;
+					color: #002244;
+					border-color: #ccc;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,4 +1,44 @@
-<?php get_header(); ?>
+<?php get_header('modal'); ?>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <div class="modal-body">
+        <div class="text-center">
+          <img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="Lakeshore Force">
+          <h2>2016 AAU Tryouts</h2>
+          <h3>Boys 9U - 14U</h3>
+        </div>
+        <div class="text-center modal-2">
+         <div class="when">
+          <h4>Sunday Nov. 6th</h4>
+          <h4>&amp;</h4>
+          <h4>Sunday Nov. 13th</h4>
+          <ul class="first">
+            <li class="date">Sunday November 6th</li>
+            <li><span class="bold-font">12:30-1:30 11U</span> <span class="bold-font">&amp; 12U</span></li>
+            <li><span class="bold-font">1:30-2:30 13U</span> <span class="bold-font">&amp; 14U</span></li>
+            <li><span class="bold-font">2:30-3:30 9U</span> <span class="bold-font">&amp; 10U</span></li>
+          </ul>
+          <ul class="second">
+            <li class="date">Sunday November 13th</li>
+            <li><span class="bold-font">3:30-4:30 11U</span> <span class="bold-font">&amp; 12U</span></li>
+            <li><span class="bold-font">4:30-5:30 13U</span> <span class="bold-font">&amp; 14U</span></li>
+            <li><span class="bold-font">5:30-6:30 9U</span> <span class="bold-font">&amp; 10U</span></li>
+          </ul>
+        </div>
+          <h5>@ Sheboygan Lutheran High School</h5>
+          <a class="modal-btn btn-one" href="http://www.lakeshoreforce.com/wp-content/uploads/2016/11/boys_tryouts_2016.pdf" target="_blank">See Tryout Details</a>
+          <a class="modal-btn btn-two" type="button" data-dismiss="modal" aria-label="Close">Go to lakeshoreforce.com</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div> <!-- End Modal -->
+
 <div class="page-wrapper">
   <div class="flex-container">
   <!-- <div class="row-1 row"> -->
@@ -31,7 +71,7 @@
         <div class="carousel-inner" role="listbox">
 
           <div class="item slide-1 active">
-            <img src="<?php bloginfo('template_directory'); ?>/images/slideTest8.jpg" alt="Welcome to Lakeshore Force">
+            <img src="<?php bloginfo('template_directory'); ?>/images/slide1.jpg" alt="Welcome to Lakeshore Force">
            <div class="carousel-caption">
            </div>
           </div>
@@ -96,6 +136,7 @@
 
       <!-- MISSION SECTION -->
         <div class="mission">
+          <!-- Button trigger modal -->
           <h2>Our Mission</h2>
           <p>The Lakeshore Force AAU Basketball Club is for boys and girls ages 9-18 and focuses on advancing players through fundamentals, skill development, and teaching valuable life lessons while playing in competitive tournaments throughout Wisconsin and the Midwest during the months of March through July. We educate our players on teamwork, commitment, and sportsmanship while emphasizing the importance of leadership and relationship building.</p> 
           <p>Lakeshore Force provides an atmosphere where families can observe their kids growing socially, emotionally, and intellectually through competition and the game of basketball.</p>
@@ -110,14 +151,23 @@
         <div class="headlines-section">
           <h2>News &amp; Headlines<i class="fa fa-newspaper-o"></i></h2>
           <div class="inner">
+
+            <!-- <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> -->
+
             <ul>
-              <a href=""><li>Filing: Vols coach scolded WR after aiding woman</li></a>
-              <a href=""><li>Source: Orioles, Gallardo agree to revised deal</li></a>
-              <a href=""><li>Curry ties record with 3 in 127th straight game</li></a>
-              <a href=""><li>Ex-Auburn RB: Went pro because mom homeless</li></a>
-              <a href=""><li>McGregor on Diaz fight: Opponent doesn't matter</li></a>
-              <a href=""><li>U.K. pols urge NFL to change Washington name</li></a>
-            </ul>
+              <?php
+                foreach( ( get_the_category() ) as $category ) {
+                  $the_query = new WP_Query('category_name=' . $category->category_nicename . '&showposts=6');
+                  while ($the_query->have_posts()) : $the_query->the_post();
+                  ?>
+                        <li>
+                          <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+                        </li>
+                  <?php endwhile; ?>
+                  <?php
+                }
+              ?>
+          </ul>
           </div>
         </div>
       <!-- END UPDATES SECTION -->
